@@ -5,6 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Practice",
+      "request": "launch",
+      "mainClass": "com.futurainstech.iseriesapi.utilities.Practice",
+      "projectName": "iseriesapi (2)"
+    },
+    {
       "name": "Launch Package",
       "type": "go",
       "request": "launch",
