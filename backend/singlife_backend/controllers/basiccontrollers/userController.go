@@ -53,19 +53,19 @@ func Signup(c *gin.Context) {
 	now_time := time.Now()
 
 	fmt.Println(body.Name)
-	IsGenderValid := false
-	if body.Gender != "" {
-		IsGenderValid = utilities.ParamValidator(body.CompanyId, body.LanguageId, "P0002", body.Gender)
+	// IsGenderValid := false
+	// if body.Gender != "" {
+	// 	IsGenderValid = utilities.ParamValidator(body.CompanyId, body.LanguageId, "P0002", body.Gender)
 
-	}
-	if !IsGenderValid {
-		errorDescription := utilities.GetError(body.CompanyId, body.LanguageId, "E0005")
+	// }
+	// if !IsGenderValid {
+	// 	errorDescription := utilities.GetError(body.CompanyId, body.LanguageId, "E0005")
 
-		c.JSON(http.StatusBadRequest, gin.H{
-			"error": errorDescription,
-		})
-		return
-	}
+	// 	c.JSON(http.StatusBadRequest, gin.H{
+	// 		"error": errorDescription,
+	// 	})
+	// 	return
+	// }
 
 	user := models.User{Name: body.Name, Email: body.Email,
 		Is_valid: true, Password: string(hash), Phone: body.Phone,

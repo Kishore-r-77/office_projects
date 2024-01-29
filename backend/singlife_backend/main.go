@@ -4,9 +4,7 @@ import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 
-	"github.com/kishoreFuturaInsTech/single_backend/controllers"
 	"github.com/kishoreFuturaInsTech/single_backend/initializers"
-	"github.com/kishoreFuturaInsTech/single_backend/middleware"
 	"github.com/kishoreFuturaInsTech/single_backend/routes"
 )
 
@@ -33,13 +31,13 @@ func main() {
 		routes.Authroutes(v1)
 		routes.Basicroutes(v1)
 		
-		services := v1.Group("/services", middleware.RequiredAuth)
-		{
-			services.POST("/contract", middleware.RequiredAuth, controllers.CreateContract)
-			services.PUT("/contract", middleware.RequiredAuth, controllers.ModifyContract)
-			services.GET("/contract/:contractId", middleware.RequiredAuth, controllers.EnquireContract)
-			services.DELETE("/contract/:contractId", middleware.RequiredAuth, controllers.DeleteContract)
-		}
+		// services := v1.Group("/services", middleware.RequiredAuth)
+		// {
+		// 	services.POST("/contract", middleware.RequiredAuth, controllers.CreateContract)
+		// 	services.PUT("/contract", middleware.RequiredAuth, controllers.ModifyContract)
+		// 	services.GET("/contract/:contractId", middleware.RequiredAuth, controllers.EnquireContract)
+		// 	services.DELETE("/contract/:contractId", middleware.RequiredAuth, controllers.DeleteContract)
+		// }
 	}
 	
 

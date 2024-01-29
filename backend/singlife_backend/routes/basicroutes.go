@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/kishoreFuturaInsTech/single_backend/basiccontrollers"
+	"github.com/kishoreFuturaInsTech/single_backend/controllers/basiccontrollers"
 	"github.com/kishoreFuturaInsTech/single_backend/middleware"
 )
 

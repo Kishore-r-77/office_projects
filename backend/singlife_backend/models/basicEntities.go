@@ -2,7 +2,8 @@ package models
 
 import (
 	"database/sql"
-	"github.com/kishoreFuturaInsTech/single_backend/models/quotation"
+	"time"
+
 	"github.com/kishoreFuturaInsTech/single_backend/types"
 	"gorm.io/gorm"
 )
@@ -56,22 +57,16 @@ type Currency struct {
 	Companies         []Company
 }
 
-type Error struct {
-	gorm.Model
-	types.CModel
-	ShortCode  string `gorm:"type:varchar(05)"`
-	LongCode   string `gorm:"type:varchar(80)"`
-	LanguageID uint
-}
+
 
 type Permission struct {
 	gorm.Model
 	types.CModel
 	ModelName string `gorm:"type:varchar(100)"`
 	Method    string `gorm:"type:varchar(100)"`
-	sql.NullInt gives nullable value
-	UserID      sql.NullInt64
-	UserGroupID sql.NullInt64
+	// sql.NullInt gives nullable value
+	// UserID      sql.NullInt64
+	// UserGroupID sql.NullInt64
 	UserID        sql.NullInt64
 	UserGroupID   sql.NullInt64
 	TransactionID uint
@@ -132,4 +127,27 @@ type UserGroup struct {
 	ValidTo     string `gorm:"type:varchar(08)"`
 	Users       []User
 	Permissions []Permission
+}
+
+type UserStatus struct {
+	gorm.Model
+	UserStatusShortName string `gorm:"type:varchar(8)"`
+	UserStatusLongName  string `gorm:"type:varchar(80)"`
+	Users               []User
+}
+
+type TransactionLock struct {
+	CompanyID     uint             `gorm:"primaryKey"`
+	LockedType    types.LockedType `gorm:"type:tinyint unsigned;primaryKey"`
+	LockedTypeKey string           `gorm:"type:varchar(30);primaryKey;"`
+	VersionId     string           `gorm:"type:varchar(40)"`
+	IsValid       types.BitBool    `gorm:"type:bit(1)"`
+	IsLocked      types.BitBool    `gorm:"type:bit(1)"`
+	UpdatedID     uint64
+	Tranno        uint
+	Session       string `gorm:"type:varchar(15)"`
+	SessionID     uint
+	CreatedAt     time.Time
+	UpdatedAt     time.Time
+	DeletedAt     gorm.DeletedAt `gorm:"index"`
 }

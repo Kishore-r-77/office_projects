@@ -18,6 +18,7 @@ func SyncDatabase() {
 	DB.AutoMigrate(&models.Error{})
 	DB.AutoMigrate(&models.UserGroup{})
 	DB.AutoMigrate(&models.BusinessDate{})
+	DB.AutoMigrate(&models.UserStatus{})
 	
 
 	
