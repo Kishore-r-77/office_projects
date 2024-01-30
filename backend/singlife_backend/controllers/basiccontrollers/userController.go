@@ -203,6 +203,7 @@ func Login(c *gin.Context) {
 		message.RefreshToken = refreshTokenString
 	}
 	//c.JSON(http.StatusOK, gin.H{})
+	fmt.Println(tokenString + "authToken=======================================")
 	c.JSON(http.StatusOK, gin.H{"message": message})
 
 }

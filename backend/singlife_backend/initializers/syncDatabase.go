@@ -6,8 +6,7 @@ import (
 
 // Table Name should start with Capital Letter
 func SyncDatabase() {
-	
-	
+
 	DB.AutoMigrate(&models.Currency{})
 	DB.AutoMigrate(&models.CompanyStatus{})
 	DB.AutoMigrate(&models.Company{})
@@ -19,11 +18,7 @@ func SyncDatabase() {
 	DB.AutoMigrate(&models.UserGroup{})
 	DB.AutoMigrate(&models.BusinessDate{})
 	DB.AutoMigrate(&models.UserStatus{})
-	
-
-	
-
-
-
+	DB.AutoMigrate(&models.Param{})
+	DB.AutoMigrate(&models.ParamDesc{})
 
 }

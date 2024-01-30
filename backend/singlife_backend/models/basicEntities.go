@@ -11,7 +11,7 @@ import (
 type BusinessDate struct {
 	gorm.Model
 	types.CModel
-	UserID uint
+	UserID     uint
 	Department uint
 	Date       string `gorm:"type:varchar(08)"`
 }
@@ -37,10 +37,10 @@ type Company struct {
 	CurrencyID               uint   // P0030  USD2INR
 	NationalIdentityMand     string `gorm:"type:varchar(01)"`
 	NationalIdentityEncrypt  string `gorm:"type:varchar(01)"`
-	Users           []User
-	Errors          []Error
-	UserGroups      []UserGroup
-	Permissions     []Permission
+	Users                    []User
+	Errors                   []Error
+	UserGroups               []UserGroup
+	Permissions              []Permission
 }
 
 type CompanyStatus struct {
@@ -56,8 +56,6 @@ type Currency struct {
 	CurrencyLongName  string `gorm:"type:varchar(50)"`
 	Companies         []Company
 }
-
-
 
 type Permission struct {
 	gorm.Model
@@ -85,7 +83,7 @@ type Language struct {
 	LangShortName string `gorm:"type:varchar(2)"`
 	LangLongName  string `gorm:"type:varchar(100)"`
 	Users         []User
-	Errors []Error
+	Errors        []Error
 }
 
 type Error struct {
@@ -150,4 +148,32 @@ type TransactionLock struct {
 	CreatedAt     time.Time
 	UpdatedAt     time.Time
 	DeletedAt     gorm.DeletedAt `gorm:"index"`
+}
+
+type Param struct {
+	CompanyId   uint16          `gorm:"primaryKey;"`
+	Name        string          `gorm:"type:varchar(50);primaryKey;"`
+	Item        string          `gorm:"type:varchar(50);primaryKey;"`
+	RecType     string          `gorm:"type:varchar(2);primaryKey;"`
+	Seqno       uint16          `gorm:"primaryKey"`
+	StartDate   string          `gorm:"type:varchar(8)"`
+	EndDate     string          `gorm:"type:varchar(8)"`
+	Is_valid    types.BitBool   `gorm:"type:bit(1)"`
+	Data        types.ExtraData `gorm:"type:varchar(5000)"`
+	LastModUser uint64          `gorm:"type:bigint;"`
+	CreatedAt   time.Time
+	UpdatedAt   time.Time
+}
+
+type ParamDesc struct {
+	CompanyId   uint16 `gorm:"primaryKey;"`
+	Name        string `gorm:"type:varchar(50);primaryKey;"`
+	Item        string `gorm:"type:varchar(50);primaryKey;"`
+	RecType     string `gorm:"type:varchar(2);primaryKey;"`
+	LanguageId  uint8  `gorm:"primaryKey;"`
+	Shortdesc   string `gorm:"type:varchar(20);"`
+	Longdesc    string `gorm:"type:varchar(50);"`
+	LastModUser uint64 `gorm:"type:bigint;"`
+	CreatedAt   time.Time
+	UpdatedAt   time.Time
 }

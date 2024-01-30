@@ -7,6 +7,7 @@ import (
 
 	"github.com/kishoreFuturaInsTech/single_backend/initializers"
 	"github.com/kishoreFuturaInsTech/single_backend/models"
+	"github.com/kishoreFuturaInsTech/single_backend/paramTypes"
 )
 
 func GetErrorDesc(iCompany uint, iLanguage uint, iShortCode string) (string, error) {
@@ -61,4 +62,24 @@ func GetBusinessDate(iCompany uint, iUser uint, iDepartment uint) (oDate string)
 		return oDate
 	}
 
+}
+
+func GetItemD(iCompany int, iTable string, iItem string, iFrom string, data *paramTypes.Extradata) error {
+
+	//var sourceMap map[string]interface{}
+	var itemparam models.Param
+	//	fmt.Println(iCompany, iItem, iFrom)
+	results := initializers.DB.Find(&itemparam, "company_id =? and name= ? and item = ? and rec_type = ? and ? between start_date  and  end_date", iCompany, iTable, iItem, "IT", iFrom)
+
+	if results.Error == nil && results.RowsAffected != 0 {
+		(*data).ParseData(itemparam.Data)
+		return nil
+	} else {
+		if results.Error != nil {
+			return errors.New(results.Error.Error())
+		} else {
+			return errors.New("No Item Found " + iTable + iItem)
+		}
+
+	}
 }
