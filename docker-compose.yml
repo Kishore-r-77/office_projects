@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql
+    container_name: mysql-container
+    env_file:
+      - ./env_files/mysql.env
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    network_mode: "host"
+    command: --default-authentication-plugin=mysql_native_password --database=singlife
+
+  backend:
+    image: gomwb-backend:v1
+    build:
+      context: ./backend/go-mwb
+      dockerfile: Dockerfile
+    container_name: gomwb-backend-container
+    volumes:
+      - ./backend/go-mwb:/app
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mysql
+
+  frontend:
+    image: gomwb-frontend:v1
+    build:
+      context: ./frontend/go-mbw_frontend
+      dockerfile: Dockerfile
+    container_name: gomwb-frontend-container
+    ports:
+      - "5174:5174"
+    volumes:
+      - ./frontend/go-mbw_frontend/src:/app/src
+      - ./app/node_modules
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+
+volumes:
+  mysql-data:
