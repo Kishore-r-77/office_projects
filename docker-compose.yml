@@ -10,8 +10,8 @@ services:
       - mysql-data:/var/lib/mysql
     ports:
       - "3307:3306"
-    network_mode: "host"
-    command: --default-authentication-plugin=mysql_native_password --database=singlife
+    # network_mode: "host"
+    # command: --default-authentication-plugin=mysql_native_password --database=singlife
 
   backend:
     image: gomwb-backend:v1
@@ -19,8 +19,8 @@ services:
       context: ./backend/go-mwb
       dockerfile: Dockerfile
     container_name: gomwb-backend-container
-    volumes:
-      - ./backend/go-mwb:/app
+    # volumes:
+    #   - ./backend/go-mwb:/app
     ports:
       - "3001:3001"
     depends_on:
