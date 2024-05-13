@@ -3,44 +3,52 @@ version: "3.8"
 services:
   mysql:
     image: mysql
-    container_name: mysql-container
+    container_name: mysql-container-golife
     env_file:
-      - ./env_files/mysql.env
+      - ./env_files/golife-mysql.env
+
     volumes:
       - mysql-data:/var/lib/mysql
     ports:
-      - "3307:3306"
-    network_mode: "host"
-    command: --default-authentication-plugin=mysql_native_password --database=policy
+      - "3308:3306"
+    expose:
+      - 3306
+    networks:
+      - golife-network
+    # command: --default-authentication-plugin=mysql_native_password --database=policy
 
   backend:
-    image: golife-backend:v1
-    build:
-      context: ./backend/GoLife
-      dockerfile: Dockerfile
+    image: kishorefutura/golife-backend:v1
+    # build:
+    #   context: ./backend/GoLife
+    #   dockerfile: Dockerfile
     container_name: golife-backend-container
-    volumes:
-      - ./backend/GoLife:/app
+
     ports:
-      - "3000:3000"
+      - "3001:3001"
+    networks:
+      - golife-network
     depends_on:
       - mysql
 
   frontend:
-    image: golife-frontend:v1
-    build:
-      context: ./frontend/GoLangUI
-      dockerfile: Dockerfile
+    image: kishorefutura/golife-frontend:v1
+    # build:
+    #   context: ./frontend/GoLangUI
+    #   dockerfile: Dockerfile
     container_name: golife-frontend-container
     ports:
       - "5173:5173"
-    volumes:
-      - ./frontend/GoLangUI/src:/app/src
-      - ./app/node_modules
     stdin_open: true
     tty: true
+    networks:
+      - golife-network
     depends_on:
       - backend
 
 volumes:
   mysql-data:
+networks:
+  golife-network:
+    driver: bridge
+    name: golife-network

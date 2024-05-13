@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  batch:
+    image: golife-batch
+    build:
+      context: ./backend/GoLifeBatch
+      dockerfile: Dockerfile
+    ports:
+      - "9090:9090"
+    expose:
+      - 9090
+    networks:
+      - golife-network
+
+networks:
+  golife-network:
+    external: true
