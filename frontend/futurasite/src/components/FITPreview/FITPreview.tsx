@@ -8,7 +8,7 @@ function FITPreview() {
         className="flex flex-col gap-6 text-center text-gray-800 dark:text-white md:text-left"
       >
         <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl lg:text-5xl text-gray-900 dark:text-white">
-          FIT Preview
+          FuturaInstech Preview
         </h1>
         <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-100 md:text-xl">
           FuturaInsTech is a Start-Up Insurance FinTech Company established by

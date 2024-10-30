@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FaGem } from "react-icons/fa"; // For icons
 
@@ -21,7 +20,7 @@ const GemsOfGoLife = () => {
   return (
     <section className="py-16 px-8 lg:px-20 bg-gradient-to-r from-blue-100 via-white to-blue-200 dark:from-gray-800 dark:via-gray-900 dark:to-gray-700 rounded-3xl shadow-2xl max-w-7xl mx-auto my-16">
       <h2 className="text-4xl font-bold text-center text-indigo-800 dark:text-indigo-200 mb-12">
-        FIT's Gamechanger – 12 Gems of “GoLife”
+        FuturaInstech's Gamechanger – 12 Gems of “GoLife”
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {features.map((feature, index) => (
