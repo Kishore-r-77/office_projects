@@ -16,7 +16,7 @@ const Footer = () => {
               <a href="/#home" className="">
                 Futura
                 <span className="inline-block font-bold text-primary">
-                  Instech
+                  InsTech
                 </span>
               </a>
             </h1>

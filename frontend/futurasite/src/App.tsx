@@ -18,6 +18,7 @@ import FITPreview from "./components/FITPreview/FITPreview";
 import Team from "./components/Team/Team";
 import Location from "./components/Location/Location";
 import OperationalModal from "./components/operationalModal/OperationalModal";
+import GemsOfGoLife from "./components/GemsOfGoLife/GemsOfGoLife";
 
 function App() {
   useEffect(() => {
@@ -47,8 +48,9 @@ function App() {
         {/* <Banner /> */}
         {/* <Blogs /> */}
         {/* <Swipe /> */}
-        <Location />
+        <GemsOfGoLife />
         <OperationalModal />
+        <Location />
         <br />
         <Footer />
       </div>
