@@ -17,6 +17,22 @@ const GemsOfGoLife = () => {
     "Lower Maintenance costs for Life Insurance Software and Data.",
   ];
 
+  // Define colors for gem icons
+  const gemColors = [
+    "text-red-500",
+    "text-yellow-500",
+    "text-green-500",
+    "text-blue-500",
+    "text-purple-500",
+    "text-indigo-500",
+    "text-pink-500",
+    "text-teal-500",
+    "text-orange-500",
+    "text-gray-500",
+    "text-cyan-500",
+    "text-lime-500",
+  ];
+
   return (
     <section className="py-16 px-8 lg:px-20 bg-gradient-to-r from-blue-100 via-white to-blue-200 dark:from-gray-800 dark:via-gray-900 dark:to-gray-700 rounded-3xl shadow-2xl max-w-7xl mx-auto my-16">
       <h2 className="text-4xl font-bold text-center text-indigo-800 dark:text-indigo-200 mb-12">
@@ -32,7 +48,11 @@ const GemsOfGoLife = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
           >
-            <div className="text-4xl text-blue-500 dark:text-blue-300 mb-4 flex justify-center">
+            <div
+              className={`text-4xl ${
+                gemColors[index % gemColors.length]
+              } mb-4 flex justify-center`}
+            >
               <FaGem />
             </div>
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2 text-center">
