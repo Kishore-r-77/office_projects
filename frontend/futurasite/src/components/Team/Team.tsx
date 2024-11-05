@@ -39,7 +39,7 @@ function Team() {
             <img
               src={member.image}
               alt={`${member.name} Image`}
-              className="w-full h-64 object-cover"
+              className="w-full h-80 object-contain"
             />
             <div className="p-6">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">

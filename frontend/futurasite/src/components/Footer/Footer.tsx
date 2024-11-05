@@ -20,10 +20,10 @@ const Footer = () => {
                 </span>
               </a>
             </h1>
-            <p className="">
+            {/* <p className="">
               Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
               consectetur adipisicing elit. Possimus, voluptate.{" "}
-            </p>
+            </p> */}
             <br />
             <div className="flex items-center gap-3">
               <FaLocationArrow />
