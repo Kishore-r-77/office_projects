@@ -18,7 +18,7 @@ const FitKernelSection = () => {
       title:
         "Life Insurance Sales Management System (Lead Management & Quotation Management)",
       description: `The Insurance assignment commences with the Sales Force discourse with the Prospect by way of rendering the genre of the Insurance Products. When the Client is persuaded with the specific Product based on the “desire and necessity”, the Sale of the Insurance Product effectuates. One or more Quotation(s) is/are prepared citing the Benefits available under the ordained product. Payment of “Consideration” constitutes the basis of consummation of “Offer and Acceptance” and hence the onset of a Life Insurance Protection venture.
-      The comprehensive Insurance Product Features indoctrination, Offer and Acceptance is kept abreast through the Lead Management and Quotation Management System of FuturaInstech. The Quotation could be transformed as a Proposal on the receipt of “Consideration” through FuturaInstech’s GoLife Software Solution.`,
+      The comprehensive Insurance Product Features indoctrination, Offer and Acceptance is kept abreast through the Lead Management and Quotation Management System of FuturaInsTech. The Quotation could be transformed as a Proposal on the receipt of “Consideration” through FuturaInstech’s GoLife Software Solution.`,
       icon: <FaHandHoldingUsd className="text-6xl text-blue-600" />,
     },
     {
