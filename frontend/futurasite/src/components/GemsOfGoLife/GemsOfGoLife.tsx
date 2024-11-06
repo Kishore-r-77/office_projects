@@ -34,7 +34,11 @@ const GemsOfGoLife = () => {
   ];
 
   return (
-    <section className="py-16 px-8 lg:px-20 bg-gradient-to-r from-blue-100 via-white to-blue-200 dark:from-gray-800 dark:via-gray-900 dark:to-gray-700 rounded-3xl shadow-2xl max-w-7xl mx-auto my-16">
+    <section
+      className="py-16 px-8 lg:px-20 bg-gradient-to-r from-blue-100 via-white to-blue-200 dark:from-gray-800 dark:via-gray-900 dark:to-gray-700 rounded-3xl shadow-2xl max-w-7xl mx-auto my-16"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <h2 className="text-4xl font-bold text-center text-indigo-800 dark:text-indigo-200 mb-12">
         FuturaInstech's Gamechanger – 12 Gems of “GoLife”
       </h2>

@@ -19,6 +19,8 @@ import Team from "./components/Team/Team";
 import Location from "./components/Location/Location";
 import OperationalModal from "./components/operationalModal/OperationalModal";
 import GemsOfGoLife from "./components/GemsOfGoLife/GemsOfGoLife";
+import FitKernelSection from "./components/FitKernelSection/FitKernelSection";
+import TechnicalStack from "./components/TechnicalStack/TechnicalStack";
 
 function App() {
   useEffect(() => {
@@ -48,6 +50,8 @@ function App() {
         {/* <Banner /> */}
         {/* <Blogs /> */}
         {/* <Swipe /> */}
+        <FitKernelSection />
+        <TechnicalStack />
         <GemsOfGoLife />
         <OperationalModal />
         <Location />
