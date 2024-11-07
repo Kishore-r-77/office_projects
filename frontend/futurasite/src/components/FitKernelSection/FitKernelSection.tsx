@@ -23,7 +23,7 @@ const FitKernelSection = () => {
     },
     {
       title: "Life Insurance Solution (GoLife)",
-      description: `The complete cycle of Life Insurance from Policy Issuance to Claims Settlement including Commission to Advisor, Customer Service and Finance is handled by FuturaInsTech’s GoLife Software Solution. GoLife has the unique advantage of online Status Updation. The Gamechanger Technology of Time Driven Function (TDF) performs the task of “Auto Pilot” dispensing the necessity of cumbersome “BatchJobs”.`,
+      description: `The complete cycle of Life Insurance from Policy Issuance to Claims Settlement including Commission to Advisor, Customer Service and Finance is handled by FuturaInsTech’s GoLife Software Solution. GoLife has the unique advantage of online Status Updation. The Gamechanger Technology of FuturaInstech is Time Driven Function (TDF) performs the task of “Auto Pilot” dispensing the necessity of cumbersome “BatchJobs”.`,
       icon: <FaHeartbeat className="text-6xl text-red-500" />,
     },
     {
@@ -33,7 +33,7 @@ const FitKernelSection = () => {
     },
     {
       title: "Reinsurance Solution (Go-RI)",
-      description: `All Life Insurance Companies disseminate their liability of colossal risks by signing a treaty with assorted Reinsurance Companies. The Reinsurers have business acquaintances with all major Insurers hence need to liaise with diverse Systema and software. The compatibility of interfaces with software systems of multifarious Insurers is a herculean task. FuturaInstech’s Reinsurance Solution “Go-RI” bridges the lacuna of the Reinsurers and the Insurers Software disparity.
+      description: `All Life Insurance Companies disseminate their liability of colossal risks by signing a treaty with assorted Reinsurance Companies. The Reinsurers have business acquaintances with all major Insurers hence need to liaise with diverse Systems and software. The compatibility of interfaces with software systems of multifarious Insurers is a herculean task. FuturaInstech’s Reinsurance Solution “Go-RI” bridges the lacuna of the Reinsurers and the Insurers Software disparity.
       Go-RI has been developed to forge and support proportional / non-proportional treaties and facultative contracts to cover risks for all genres of Life Insurance products. It offers a comprehensive solution for risk mitigation, invigorating competency, and transcending customer satisfaction.`,
       icon: <FaSyncAlt className="text-6xl text-purple-500" />,
     },

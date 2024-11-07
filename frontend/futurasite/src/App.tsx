@@ -21,6 +21,7 @@ import OperationalModal from "./components/operationalModal/OperationalModal";
 import GemsOfGoLife from "./components/GemsOfGoLife/GemsOfGoLife";
 import FitKernelSection from "./components/FitKernelSection/FitKernelSection";
 import TechnicalStack from "./components/TechnicalStack/TechnicalStack";
+import FITSection from "./components/FITSection/FITSection";
 
 function App() {
   useEffect(() => {
@@ -39,10 +40,12 @@ function App() {
           {/* <Navbar /> */}
           <Navbar2 />
         </div>
+
+        <FITPreview />
         <Hero />
         {/* <Service /> */}
+        <FITSection />
         <Undertaking />
-        <FITPreview />
         <br />
         <Team />
         {/* <BannerDetails reverse={true} img={Banner1} />

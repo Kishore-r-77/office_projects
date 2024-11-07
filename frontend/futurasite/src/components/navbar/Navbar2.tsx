@@ -48,7 +48,7 @@ const Navbar2 = () => {
             <ul className="flex items-center gap-10">
               <li className="group relative cursor-pointer">
                 <a
-                  href="#Undertaking"
+                  href="/#About"
                   className="flex h-[72px] items-center gap-[2px]"
                 >
                   About Us{" "}

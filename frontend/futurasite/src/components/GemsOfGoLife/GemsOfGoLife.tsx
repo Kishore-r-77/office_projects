@@ -12,9 +12,9 @@ const GemsOfGoLife = () => {
     "Seamless portability of Policy Service between locations.",
     "Hassle-free Transaction Reversals, with accurate Account Entries.",
     "TDF (Time Driven Function) ensures Real-Time Updation without Batch Jobs.",
-    "MWB (Microsoft Work Bench) enables seamless Data Migration.",
-    "Comprehensive Re-Insurance module in a concise package.",
-    "Lower Maintenance costs for Life Insurance Software and Data.",
+    // "MWB (Microsoft Work Bench) enables seamless Data Migration.",
+    // "Comprehensive Re-Insurance module in a concise package.",
+    // "Lower Maintenance costs for Life Insurance Software and Data.",
   ];
 
   // Define colors for gem icons
@@ -28,9 +28,9 @@ const GemsOfGoLife = () => {
     "text-pink-500",
     "text-teal-500",
     "text-orange-500",
-    "text-gray-500",
-    "text-cyan-500",
-    "text-lime-500",
+    // "text-gray-500",
+    // "text-cyan-500",
+    // "text-lime-500",
   ];
 
   return (
@@ -40,7 +40,7 @@ const GemsOfGoLife = () => {
       data-aos-duration="1000"
     >
       <h2 className="text-4xl font-bold text-center text-indigo-800 dark:text-indigo-200 mb-12">
-        FuturaInstech's Gamechanger – 12 Gems of “GoLife”
+        FuturaInstech's Gamechanger – Navaratna of “GoLife”
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {features.map((feature, index) => (
