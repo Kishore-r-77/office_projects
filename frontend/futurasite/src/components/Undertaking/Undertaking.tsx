@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function Undertaking() {
   return (
-    <section className="py-16">
+    <section id="Undertaking" className="py-16">
       <main className="bg-slate-100 dark:bg-slate-900 dark:text-white px-6 md:px-20 lg:px-32 py-12 rounded-lg shadow-md">
         <div
           data-aos="fade-up"

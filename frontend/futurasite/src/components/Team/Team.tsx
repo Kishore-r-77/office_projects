@@ -32,7 +32,10 @@ function Team() {
   ];
 
   return (
-    <section className="container mx-auto py-12 px-6 lg:px-16 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg">
+    <section
+      id="Team"
+      className="container mx-auto py-12 px-6 lg:px-16 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg"
+    >
       <h2 className="text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-10">
         Our Team
       </h2>

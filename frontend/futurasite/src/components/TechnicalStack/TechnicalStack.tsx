@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import {
   FaCloud,
+  FaCode,
   FaCog,
   FaDatabase,
   FaGithub,
@@ -8,11 +9,11 @@ import {
   FaReact,
   FaToolbox,
 } from "react-icons/fa";
-import { SiGoland, SiJson, SiVisualstudiocode } from "react-icons/si";
+import { SiJson, SiVisualstudiocode } from "react-icons/si";
 
 const techStack = [
   {
-    icon: <SiGoland />,
+    icon: <FaCode />,
     title: "Programming Languages",
     details: "Golang, JavaScript, Typescript, Python, Dart, Cobol",
   },
