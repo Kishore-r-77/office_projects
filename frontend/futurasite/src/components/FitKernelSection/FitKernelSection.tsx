@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -7,12 +7,16 @@ import {
   FaHeartbeat,
   FaUserShield,
   FaSyncAlt,
+  FaChevronDown,
 } from "react-icons/fa";
+import GemsOfGoLife from "../GemsOfGoLife/GemsOfGoLife"; // Assuming you have created this component
 
 // Initialize AOS for scroll animations
 AOS.init();
 
 const FitKernelSection = () => {
+  const [isExpanded, setIsExpanded] = useState(false); // State to manage collapsible
+
   const sectionData = [
     {
       title:
@@ -25,10 +29,11 @@ const FitKernelSection = () => {
       title: "Life Insurance Solution (GoLife)",
       description: `The complete cycle of Life Insurance from Policy Issuance to Claims Settlement including Commission to Advisor, Customer Service and Finance is handled by FuturaInsTech’s GoLife Software Solution. GoLife has the unique advantage of online Status Updation. The Gamechanger Technology of FuturaInstech is Time Driven Function (TDF) performs the task of “Auto Pilot” dispensing the necessity of cumbersome “BatchJobs”.`,
       icon: <FaHeartbeat className="text-6xl text-red-500" />,
+      hasCollapsible: true, // Indicate this item has a collapsible section
     },
     {
-      title: "Group Insurance",
-      description: `Group Insurance provides tailored coverage for groups, offering policies that streamline benefits management for corporate or organizational clients.`,
+      title: "Group Insurance (GoGroup)",
+      description: `Group Insurance is an Insurance Contract between the Insurer and the Corporate Client. The Corporate Client takes Life Insurance Policy for his/her employees by deducting salary and remitting to the Insurer, premium as per the Terms and Conditions of the Product chosen. Distinct payment for each Group Product is remitted by the Client to the Insurer. FuturaInsTech’s GoGroup impeccably integrates with any Group Insurance Software of the Corporate Client in terms of New Business, Customer Service, Sales Assignment, Finance and Claims.`,
       icon: <FaUserShield className="text-6xl text-green-500" />,
     },
     {
@@ -68,6 +73,27 @@ const FitKernelSection = () => {
             <p className="leading-relaxed text-lg text-gray-600 dark:text-gray-300 font-light">
               {item.description}
             </p>
+
+            {item.hasCollapsible && (
+              <div>
+                <button
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className="mt-4 flex items-center text-blue-600 dark:text-blue-400 font-medium"
+                >
+                  FuturaInstech's Gamechanger – Navaratna of “GoLife”
+                  <FaChevronDown
+                    className={`ml-2 transition-transform duration-300 ${
+                      isExpanded ? "rotate-180" : "rotate-0"
+                    }`}
+                  />
+                </button>
+                {isExpanded && (
+                  <div className="mt-4">
+                    <GemsOfGoLife />
+                  </div>
+                )}
+              </div>
+            )}
           </motion.div>
         ))}
       </div>

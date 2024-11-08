@@ -55,7 +55,7 @@ function App() {
         {/* <Swipe /> */}
         <FitKernelSection />
         <TechnicalStack />
-        <GemsOfGoLife />
+        {/* <GemsOfGoLife /> */}
         <OperationalModal />
         <Location />
         <br />
