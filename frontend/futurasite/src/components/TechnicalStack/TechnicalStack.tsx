@@ -41,11 +41,11 @@ const techStack = [
     title: "Software/Hardware",
     details: "Non licensed software and inexpensive hardware",
   },
-  {
-    icon: <FaCog />,
-    title: "Customization",
-    details: "System design based on client stipulations",
-  },
+  // {
+  //   icon: <FaCog />,
+  //   title: "Customization",
+  //   details: "System design based on client stipulations",
+  // },
 ];
 
 const TechnicalStack = () => {

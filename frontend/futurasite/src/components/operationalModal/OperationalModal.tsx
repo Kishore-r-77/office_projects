@@ -32,10 +32,10 @@ const OperationalModal = () => {
       title: "Consulting",
       description: "We administer IT and Business Consulting Services",
     },
-    {
-      title: "Support",
-      description: "Bestowing 24 *7 production support is our insignia",
-    },
+    // {
+    //   title: "Support",
+    //   description: "Bestowing 24 *7 production support is our insignia",
+    // },
   ];
 
   return (
