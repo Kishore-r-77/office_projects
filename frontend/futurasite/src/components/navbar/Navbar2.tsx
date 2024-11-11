@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { BiPhoneCall, BiSolidMoon, BiSolidSun } from "react-icons/bi";
-import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
-import ResponsiveMenu from "./ResponsiveMenu";
 const Navbar2 = () => {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
