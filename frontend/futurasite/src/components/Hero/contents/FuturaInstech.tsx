@@ -2,8 +2,8 @@ import Banner from "../../../assets/undraw_real_time_sync_re_nky7.svg";
 
 function FuturaInstech() {
   return (
-    <section className="container mx-auto flex h-[750px] flex-col items-center justify-center py-16 bg-gradient-to-br from-blue-100 via-gray-100 to-blue-200 dark:bg-gradient-to-br dark:from-violet-900 dark:via-purple-700 dark:to-violet-700 rounded-lg shadow-xl md:h-[600px] md:flex-row md:py-0 px-6 lg:px-16">
-      <div className="grid grid-cols-1 items-center gap-12 text-gray-800 dark:text-white md:grid-cols-2">
+    <section className="container mx-auto flex flex-col items-center justify-center py-16 bg-gradient-to-br from-blue-100 via-gray-100 to-blue-200 dark:bg-gradient-to-br dark:from-violet-900 dark:via-purple-700 dark:to-violet-700 rounded-lg shadow-xl md:h-[600px] md:flex-row md:py-0 px-6 lg:px-16">
+      <div className="grid grid-cols-1 items-center gap-8 text-gray-800 dark:text-white md:grid-cols-2 md:gap-12">
         {/* Left Section: Text Content */}
         <div
           data-aos="fade-right"
@@ -45,7 +45,7 @@ function FuturaInstech() {
           <img
             src={Banner}
             alt="FuturaInsTech illustration"
-            className="max-w-md w-full transform hover:scale-105 transition-all duration-300 hover:drop-shadow-lg dark:drop-shadow-md rounded-lg"
+            className="max-w-full w-full h-auto max-h-[400px] object-contain transform hover:scale-105 transition-all duration-300 hover:drop-shadow-lg dark:drop-shadow-md rounded-lg"
           />
         </div>
       </div>

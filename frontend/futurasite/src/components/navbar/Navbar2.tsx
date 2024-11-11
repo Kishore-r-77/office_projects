@@ -74,7 +74,7 @@ const Navbar2 = () => {
                     <p className="text-sm">Call us on</p>
                     <p className="text-lg">
                       {" "}
-                      <a href="tel:+91123456789">+91 8825761193</a>
+                      <a href="tel:+918825761193">+91 8825761193</a>
                     </p>
                   </div>
                 </li>
@@ -95,7 +95,7 @@ const Navbar2 = () => {
           </div>
 
           {/* Mobile view  */}
-          <div className="flex items-center gap-4 md:hidden ">
+          {/* <div className="flex items-center gap-4 md:hidden ">
             {theme === "dark" ? (
               <BiSolidSun
                 onClick={() => setTheme("light")}
@@ -120,10 +120,10 @@ const Navbar2 = () => {
                 size={30}
               />
             )}
-          </div>
+          </div> */}
         </nav>
       </header>
-      <ResponsiveMenu showMenu={showMenu} />
+      {/* <ResponsiveMenu showMenu={showMenu} /> */}
     </>
   );
 };

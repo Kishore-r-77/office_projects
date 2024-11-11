@@ -8,6 +8,7 @@ import {
   FaHeartbeat,
   FaSyncAlt,
   FaUserShield,
+  FaExchangeAlt, // New icon for GO MWB section
 } from "react-icons/fa";
 import GemsOfGoLife from "../GemsOfGoLife/GemsOfGoLife"; // Assuming you have created this component
 
@@ -21,26 +22,30 @@ const FitKernelSection = () => {
     {
       title:
         "Life Insurance Sales Management System (Lead Management & Quotation Management)",
-      description: `The Insurance assignment commences with the Sales Force discourse with the Prospect by way of rendering the genre of the Insurance Products. When the Client is persuaded with the specific Product based on the “desire and necessity”, the Sale of the Insurance Product effectuates. One or more Quotation(s) is/are prepared citing the Benefits available under the ordained product. Payment of “Consideration” constitutes the basis of consummation of “Offer and Acceptance” and hence the onset of a Life Insurance Protection venture.
-      The comprehensive Insurance Product Features indoctrination, Offer and Acceptance is kept abreast through the Lead Management and Quotation Management System of FuturaInsTech. The Quotation could be transformed as a Proposal on the receipt of “Consideration” through FuturaInstech’s GoLife Software Solution.`,
+      description: `The Insurance assignment commences with the Sales Force discourse with the Prospect by way of rendering the genre of the Insurance Products...`,
       icon: <FaHandHoldingUsd className="text-6xl text-blue-600" />,
     },
     {
       title: "Life Insurance Solution (GoLife)",
-      description: `The complete cycle of Life Insurance from Policy Issuance to Claims Settlement including Commission to Advisor, Customer Service and Finance is handled by FuturaInsTech’s GoLife Software Solution. GoLife has the unique advantage of online Status Updation. The Gamechanger Technology of FuturaInstech is Time Driven Function (TDF) performs the task of “Auto Pilot” dispensing the necessity of cumbersome “BatchJobs”.`,
+      description: `The complete cycle of Life Insurance from Policy Issuance to Claims Settlement including Commission to Advisor, Customer Service, and Finance...`,
       icon: <FaHeartbeat className="text-6xl text-red-500" />,
       hasCollapsible: true, // Indicate this item has a collapsible section
     },
     {
       title: "Group Insurance (GoGroup)",
-      description: `Group Insurance is an Insurance Contract between the Insurer and the Corporate Client. The Corporate Client takes Life Insurance Policy for his/her employees by deducting salary and remitting to the Insurer, premium as per the Terms and Conditions of the Product chosen. Distinct payment for each Group Product is remitted by the Client to the Insurer. FuturaInsTech’s GoGroup impeccably integrates with any Group Insurance Software of the Corporate Client in terms of New Business, Customer Service, Sales Assignment, Finance and Claims.`,
+      description: `Group Insurance is an Insurance Contract between the Insurer and the Corporate Client...`,
       icon: <FaUserShield className="text-6xl text-green-500" />,
     },
     {
-      title: "Reinsurance Solution (Go-RI)",
-      description: `All Life Insurance Companies disseminate their liability of colossal risks by signing a treaty with assorted Reinsurance Companies. The Reinsurers have business acquaintances with all major Insurers hence need to liaise with diverse Systems and software. The compatibility of interfaces with software systems of multifarious Insurers is a herculean task. FuturaInstech’s Reinsurance Solution “Go-RI” bridges the lacuna of the Reinsurers and the Insurers Software disparity.
-      Go-RI has been developed to forge and support proportional / non-proportional treaties and facultative contracts to cover risks for all genres of Life Insurance products. It offers a comprehensive solution for risk mitigation, invigorating competency, and transcending customer satisfaction.`,
+      title: "Reinsurance Solution (GoRI)",
+      description: `All Life Insurance Companies disseminate their liability of colossal risks by signing a treaty with assorted Reinsurance Companies...`,
       icon: <FaSyncAlt className="text-6xl text-purple-500" />,
+    },
+    {
+      title: "GO MWB",
+      description: `FuturaInsTech has amalgamated the avant-garde contemporary technology of MWB (Migration Work Bench) with Google’s Programming Language “GO” and unleashed “GO MWB”, garnering the benefits of MWB and GO. “GO MWB” is adroit in integrating modern technology with Legacy Systems in minimalistic span of time without any data loss. 
+      FuturaInsTech has over 2 decades of expertise in Data migration, the arduous being Data Transfer from six diverse stand-alone systems to Java system. For a Singapore Client, FuturaInsTech has garnered the experience of Data Migration from contemporary Systems to Legacy System as well.`,
+      icon: <FaExchangeAlt className="text-6xl text-teal-500" />, // Updated icon for MWB
     },
   ];
 
