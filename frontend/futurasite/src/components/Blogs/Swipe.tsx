@@ -2,28 +2,6 @@ import Slider from "react-slick";
 import ImgBlog from "../../assets/blog1.jpg";
 import BlogCard from "./BlogCard";
 
-function SampleNextArrow(props: any) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props: any) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
-}
-
 const Swipe = () => {
   const settings = {
     dots: false,

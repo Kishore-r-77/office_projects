@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion";
+import { useState } from "react";
 import {
+  FaChevronDown,
   FaHandHoldingUsd,
   FaHeartbeat,
-  FaUserShield,
   FaSyncAlt,
-  FaChevronDown,
+  FaUserShield,
 } from "react-icons/fa";
 import GemsOfGoLife from "../GemsOfGoLife/GemsOfGoLife"; // Assuming you have created this component
 

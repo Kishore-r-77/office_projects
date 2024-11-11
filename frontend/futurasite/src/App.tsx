@@ -4,24 +4,17 @@ import "aos/dist/aos.css";
 import Footer from "./components/Footer/Footer";
 
 // import Navbar from "./components/navbar/Navbar";
-import Navbar2 from "./components/navbar/Navbar2";
 import { useEffect } from "react";
-import Hero from "./components/Hero/Hero";
-import Service from "./components/Service/Service";
-import BannerDetails from "./components/BannerDetails/BannerDetails";
-import Banner from "./components/Banner/Banner";
-import Blogs from "./components/Blogs/Blogs";
-import Banner1 from "./assets/blog1.jpg";
-import Banner2 from "./assets/blog3.jpg";
-import Undertaking from "./components/Undertaking/Undertaking";
-import FITPreview from "./components/FITPreview/FITPreview";
-import Team from "./components/Team/Team";
-import Location from "./components/Location/Location";
-import OperationalModal from "./components/operationalModal/OperationalModal";
-import GemsOfGoLife from "./components/GemsOfGoLife/GemsOfGoLife";
 import FitKernelSection from "./components/FitKernelSection/FitKernelSection";
-import TechnicalStack from "./components/TechnicalStack/TechnicalStack";
+import FITPreview from "./components/FITPreview/FITPreview";
 import FITSection from "./components/FITSection/FITSection";
+import Hero from "./components/Hero/Hero";
+import Location from "./components/Location/Location";
+import Navbar2 from "./components/navbar/Navbar2";
+import OperationalModal from "./components/operationalModal/OperationalModal";
+import Team from "./components/Team/Team";
+import TechnicalStack from "./components/TechnicalStack/TechnicalStack";
+import Undertaking from "./components/Undertaking/Undertaking";
 
 function App() {
   useEffect(() => {
@@ -32,6 +25,10 @@ function App() {
       delay: 100,
     });
     AOS.refresh();
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.classList.add("dark");
   }, []);
   return (
     <>

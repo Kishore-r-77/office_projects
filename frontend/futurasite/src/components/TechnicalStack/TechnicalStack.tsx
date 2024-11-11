@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import {
   FaCloud,
   FaCode,
-  FaCog,
   FaDatabase,
   FaGithub,
   FaLayerGroup,

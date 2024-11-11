@@ -1,5 +1,3 @@
-import React from "react";
-
 const BlogCard = ({ Img1 }: any) => {
   return (
     <div>

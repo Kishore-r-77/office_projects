@@ -1,6 +1,3 @@
-import React from "react";
-import BannerImg from "../../assets/marketing-speaker.png";
-
 const Banner = () => {
   return (
     <main className="bg-primary ">

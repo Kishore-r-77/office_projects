@@ -1,7 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-import "aos/dist/aos.css";
 import AOS from "aos";
+import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 // Initialize AOS animations
 AOS.init();
@@ -39,7 +38,8 @@ const MapComponent = () => {
         ></iframe>
       </motion.div>
       <p className="text-center text-gray-700 dark:text-gray-300 mt-8 text-lg lg:text-xl font-medium leading-relaxed">
-        1st Main Rd, Judge Colony, Tambaram, Chennai, Tamil Nadu 600064
+        #2, Judge Colony 1st Main Road, Tambaram Sanatorium, Chennai, India,
+        600047.
       </p>
     </div>
   );

@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { BiSolidSun, BiPhoneCall, BiSolidMoon } from "react-icons/bi";
-import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
-import { FaCaretDown } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { BiPhoneCall, BiSolidMoon, BiSolidSun } from "react-icons/bi";
+import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
 const Navbar2 = () => {
   const [theme, setTheme] = useState(
@@ -75,7 +74,7 @@ const Navbar2 = () => {
                     <p className="text-sm">Call us on</p>
                     <p className="text-lg">
                       {" "}
-                      <a href="tel:+91123456789">+91 123456789</a>
+                      <a href="tel:+91123456789">+91 8825761193</a>
                     </p>
                   </div>
                 </li>
