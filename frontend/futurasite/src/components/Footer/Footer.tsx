@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import {
   FaLinkedin,
   FaWhatsapp,
@@ -6,6 +7,31 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const [showGoTop, setShowGoTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowGoTop(true); // Show the button when scrolled down 300px
+      } else {
+        setShowGoTop(false); // Hide the button when at the top
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="rounded-t-3xl bg-gradient-to-r from-violet-950 to-violet-900">
       <section className="mx-auto max-w-[1200px] text-white">
@@ -20,8 +46,6 @@ const Footer = () => {
                 </span>
               </a>
             </h1>
-            {/* <p>Sample description can go here.</p> */}
-            <br />
             <div className="flex items-center gap-3">
               <FaLocationArrow />
               <p>Chennai, Tamil Nadu</p>
@@ -34,31 +58,13 @@ const Footer = () => {
 
           {/* Important Links */}
           <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10">
-            <div>
-              <div className="px-4 py-8">
-                <h1 className="mb-3 text-justify text-xl font-bold sm:text-left sm:text-xl">
-                  Important Links
-                </h1>
-                <ul className="flex flex-col gap-3">
-                  <li className="cursor-pointer transition-all duration-300 hover:translate-x-[2px]">
-                    <a href="/#About">About</a>
-                  </li>
-                  <li className="cursor-pointer transition-all duration-300 hover:translate-x-[2px]">
-                    <a href="/#Product">Services</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
             {/* Social Links */}
-            <div>
+            <div className="flex justify-end">
               <div className="px-4 py-8">
                 <h1 className="mb-3 text-justify text-xl font-bold sm:text-left sm:text-xl">
                   Social Links
                 </h1>
                 <div className="flex gap-6">
-                  {" "}
-                  {/* Flexbox for side-by-side icons */}
                   {/* LinkedIn */}
                   <a
                     href="https://www.linkedin.com/company/futurainstech/"
@@ -90,6 +96,16 @@ const Footer = () => {
           </div>
         </div>
       </section>
+
+      {/* Go to Top Button */}
+      {showGoTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-10 right-10 z-50 p-5 rounded-full bg-gradient-to-r from-violet-600 to-violet-800 text-white shadow-lg hover:bg-violet-700 transition-all transform hover:scale-110"
+        >
+          <span className="text-3xl">↑</span>
+        </button>
+      )}
     </div>
   );
 };

@@ -5,16 +5,19 @@ import Footer from "./components/Footer/Footer";
 
 // import Navbar from "./components/navbar/Navbar";
 import { useEffect } from "react";
-import FitKernelSection from "./components/FitKernelSection/FitKernelSection";
 import FITPreview from "./components/FITPreview/FITPreview";
-import FITSection from "./components/FITSection/FITSection";
+import Undertaking from "./components/Undertaking/Undertaking";
 import Hero from "./components/Hero/Hero";
 import Location from "./components/Location/Location";
 import Navbar2 from "./components/navbar/Navbar2";
 import OperationalModal from "./components/operationalModal/OperationalModal";
 import Team from "./components/Team/Team";
 import TechnicalStack from "./components/TechnicalStack/TechnicalStack";
-import Undertaking from "./components/Undertaking/Undertaking";
+
+import FuturaInsTechEnterprise from "./components/FuturaInsTechEnterprise/FuturaInsTechEnterprise";
+import FitKernelSection from "./components/FitKernelSection/FitKernelSection";
+import OurServiceProp from "./components/OurServiceProp/OurServiceProp";
+import FuturaInsTechManifesto from "./components/FuturaInsTechManifesto/FuturaInsTechManifesto";
 
 function App() {
   useEffect(() => {
@@ -39,10 +42,11 @@ function App() {
         </div>
 
         <FITPreview />
-        <Hero />
+        <FuturaInsTechEnterprise />
         {/* <Service /> */}
-        <FITSection />
-        <Undertaking />
+        {/* <Undertaking />
+        <OurServiceProp /> */}
+        <FuturaInsTechManifesto />
         <br />
         <Team />
         {/* <BannerDetails reverse={true} img={Banner1} />

@@ -51,7 +51,7 @@ FuturaInsTech has over 2 decades of expertise in Data migration, the arduous bei
 
   return (
     <div
-      id="Product"
+      id="FuturaKernel"
       className="bg-gradient-to-b from-blue-50 via-white to-blue-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 py-16 px-6 sm:px-20 font-sans"
       data-aos="fade-up"
       data-aos-duration="1000"

@@ -8,6 +8,7 @@ AOS.init();
 const MapComponent = () => {
   return (
     <div
+      id="Location"
       className="map-container bg-gradient-to-br from-blue-50 via-white to-blue-100 dark:from-gray-800 dark:via-gray-850 dark:to-gray-900 p-12 lg:p-16 rounded-3xl shadow-2xl mx-auto max-w-5xl transition duration-500"
       data-aos="fade-up"
       data-aos-duration="1000"

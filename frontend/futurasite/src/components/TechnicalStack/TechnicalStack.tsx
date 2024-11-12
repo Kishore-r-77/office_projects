@@ -50,6 +50,7 @@ const techStack = [
 const TechnicalStack = () => {
   return (
     <div
+      id="TechStack"
       className="bg-gradient-to-b from-blue-50 via-white to-blue-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-200 py-16 px-6 sm:px-20"
       data-aos="fade-up"
       data-aos-duration="1000"

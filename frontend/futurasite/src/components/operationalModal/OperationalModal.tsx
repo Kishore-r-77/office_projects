@@ -40,6 +40,7 @@ const OperationalModal = () => {
 
   return (
     <section
+      id="OperationalModels"
       className="bg-gradient-to-br from-blue-50 via-white to-blue-100 dark:from-gray-800 dark:via-gray-850 dark:to-gray-900 py-16 px-6 lg:px-16 rounded-3xl shadow-2xl max-w-7xl mx-auto my-16"
       data-aos="fade-up"
       data-aos-duration="1000"
