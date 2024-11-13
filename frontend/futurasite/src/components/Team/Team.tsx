@@ -26,7 +26,7 @@ function Team() {
     {
       name: "Sreeram Ranganathan",
       title: "Principal Consultant - Business & IT Solutions",
-      description: `Sreeram Ranganathan (Sree) has 30+ years of accomplishment in Life & Health Insurance Domains. Sree has been serving in multifarious Life Insurance Offices and IT companies with composite credentials as an Independent Consultant in Business & IT Solutions and administrating project teams. Sree has experience with organizations like LIC, ING Insurance, Mastek Ltd, DXC Technologies Singapore, and China Life Insurance, Singapore. He is skilled in administrating requirements workshops, detailing business requirements, architecting solutions, managing UAT execution, and providing client demos. Sree has worked onsite in the US, Canada, UK, Singapore, and Vietnam. He is a Commerce graduate and an Associate of the Insurance Institute of India (AIII) with a diploma in OOPs and Windows Programming from IIT Kharagpur and a Program in Leading and Managing (PLAM) from IIM Calcutta.`,
+      description: `Sreeram Ranganathan (Sree) has over 30+ years of experience in Life & Health Insurance Domains. As an Independent Consultant, Sree was part of multiple Life Insurance Offices and IT Companies in the US, UK, Canada and Singapore. In the past, Sree was part of LIC, ING & Mastek in India and DXC Technologies & China Life Insurance in Singapore. Sree is a Commerce graduate and an Associate of Insurance Institute of India. He holds a diploma in OOPs and Windows Programming from IIT Kharagpur, a certified professional in Program in Leading and Managing (PLAM) from IIM Calcutta and Practical Product Management™ from Pragmatic Institute, USA.`,
       image: Sreeram,
     },
   ];
