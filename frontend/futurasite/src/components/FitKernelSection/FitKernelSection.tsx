@@ -42,7 +42,7 @@ const FitKernelSection = () => {
       icon: <FaSyncAlt className="text-6xl text-purple-500" />,
     },
     {
-      title: "GO MWB",
+      title: "Migration Work Bench (GOMWB)",
       description: `FuturaInsTech has amalgamated the avant-garde contemporary technology of MWB (Migration Work Bench) with Google’s Programming Language “GO” and unleashed “GO MWB”, garnering the benefits of MWB and GO. “GO MWB” is adroit in integrating modern technology with Legacy Systems in minimalistic span of time without any data loss. 
 FuturaInsTech has over 2 decades of expertise in Data migration, the arduous being Data Transfer from six diverse stand-alone systems to Java based system for an indonesian customer. For a Singapore Client, FuturaInsTech has garnered the experience of Data Migration from contemporary Systems to Legacy System as well.`,
       icon: <FaExchangeAlt className="text-6xl text-teal-500" />, // Updated icon for MWB

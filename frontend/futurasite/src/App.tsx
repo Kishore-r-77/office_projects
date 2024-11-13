@@ -6,17 +6,14 @@ import Footer from "./components/Footer/Footer";
 // import Navbar from "./components/navbar/Navbar";
 import { useEffect } from "react";
 import FITPreview from "./components/FITPreview/FITPreview";
-import Undertaking from "./components/Undertaking/Undertaking";
-import Hero from "./components/Hero/Hero";
 import Location from "./components/Location/Location";
 import Navbar2 from "./components/navbar/Navbar2";
 import OperationalModal from "./components/operationalModal/OperationalModal";
 import Team from "./components/Team/Team";
 import TechnicalStack from "./components/TechnicalStack/TechnicalStack";
 
-import FuturaInsTechEnterprise from "./components/FuturaInsTechEnterprise/FuturaInsTechEnterprise";
 import FitKernelSection from "./components/FitKernelSection/FitKernelSection";
-import OurServiceProp from "./components/OurServiceProp/OurServiceProp";
+import FuturaInsTechEnterprise from "./components/FuturaInsTechEnterprise/FuturaInsTechEnterprise";
 import FuturaInsTechManifesto from "./components/FuturaInsTechManifesto/FuturaInsTechManifesto";
 
 function App() {

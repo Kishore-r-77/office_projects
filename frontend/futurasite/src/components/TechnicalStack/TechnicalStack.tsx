@@ -14,7 +14,7 @@ const techStack = [
   {
     icon: <FaCode />,
     title: "Programming Languages",
-    details: "Golang, JavaScript, Typescript, Python, Dart, Cobol",
+    details: "Golang, Java, JavaScript, Typescript, Python, Dart, Cobol",
   },
   {
     icon: <FaToolbox />,
