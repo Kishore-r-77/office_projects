@@ -1,0 +1,102 @@
+{{define "upload"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="file"] {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px;
+            width: 90%;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            color: #2e7d32;
+            border-radius: 4px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload CSV to Generate PDFs</h1>
+        <form id="uploadForm" method="post" enctype="multipart/form-data" action="/upload">
+            <input type="file" name="file" id="file" required>
+            <button type="submit">Generate PDFs</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        const form = document.getElementById('uploadForm');
+        const resultDiv = document.getElementById('result');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            resultDiv.style.display = 'none';
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData,
+                });
+                const data = await response.json();
+                if (response.ok) {
+                    resultDiv.innerHTML = `<p>Generated PDFs:</p><ul>${data.pdfs.map(pdf => `<li><a href="${pdf}" target="_blank">${pdf}</a></li>`).join('')}</ul>`;
+                    resultDiv.style.display = 'block';
+                } else {
+                    resultDiv.innerHTML = `<p>Error: ${data.error || 'Unknown error'}</p>`;
+                    resultDiv.style.display = 'block';
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `<p>Error: ${error.message}</p>`;
+                resultDiv.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
+{{end}}
