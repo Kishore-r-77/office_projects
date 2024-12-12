@@ -20,7 +20,7 @@ function Team() {
     {
       name: "Shijith Chand",
       title: "Chief Technology Officer (CTO)",
-      description: `Shijith Chand (Shijit) has over two decades in IT with a focus on Insurance, including roles as a Technical Consultant for Indian and SE Asian clients. He’s an accomplished Technical Wizard, known for developing frameworks for code transformation, including legacy COBOL to Java. Shijit holds a B.E. in Electronics from NIT, Allahabad.`,
+      description: `Shijith Chand (Shijith) has over two decades in IT with a focus on Insurance, including roles as a Technical Consultant for Indian and SE Asian clients. He’s an accomplished Technical Wizard, known for developing frameworks for code transformation, including legacy COBOL to Java. Shijit holds a B.E. in Electronics from NIT, Allahabad.`,
       image: Shijith,
     },
     {
